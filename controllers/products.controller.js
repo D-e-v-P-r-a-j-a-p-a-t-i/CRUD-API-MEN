@@ -1,6 +1,6 @@
 const path = require("path");
 
-const homePage = (req, res) => {
+const home = (req, res) => {
   const directory = path.dirname(__dirname);
   res.sendFile(path.join(directory, "index.html"));
 };
@@ -64,7 +64,7 @@ const deleteProduct = async (req, res) => {
 };
 
 module.exports = {
-  homePage,
+  home,
   getAllProducts,
   addProduct,
   getProductById,

@@ -1,10 +1,10 @@
-const { homePage, getAllProducts, addProduct, getProductById, updateProduct, deleteProduct } = require("../controllers/products.controller");
+const { home, getAllProducts, addProduct, getProductById, updateProduct, deleteProduct } = require("../controllers/products.controller");
 
 const express = require("express");
 
 const router = express.Router();
 
-router.get("/", homePage);
+router.get("/", home);
 
 router.post("/addProduct", addProduct);
 
